@@ -1,0 +1,311 @@
+[class*="col-"] {
+    width: 100%;
+}
+@media only screen and (min-width: 350px) {
+    /* For phones: */
+    .col-p-1 {width: 8.33%;}
+    .col-p-2 {width: 16.66%;}
+    .col-p-3 {width: 25%;}
+    .col-p-4 {width: 33.33%;}
+    .col-p-5 {width: 41.66%;}
+    .col-p-6 {width: 50%;}
+    .col-p-7 {width: 58.33%;}
+    .col-p-8 {width: 66.66%;}
+    .col-p-9 {width: 75%;}
+    .col-p-10 {width: 83.33%;}
+    .col-p-11 {width: 91.66%;}
+    .col-p-12 {width: 100%;}
+  
+}
+@media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .col-m-1 {width: 8.33%;}
+    .col-m-2 {width: 16.66%;}
+    .col-m-3 {width: 25%;}
+    .col-m-4 {width: 33.33%;}
+    .col-m-5 {width: 41.66%;}
+    .col-m-6 {width: 50%;}
+    .col-m-7 {width: 58.33%;}
+    .col-m-8 {width: 66.66%;}
+    .col-m-9 {width: 75%;}
+    .col-m-10 {width: 83.33%;}
+    .col-m-11 {width: 91.66%;}
+    .col-m-12 {width: 100%;}
+    .title { font-size: 20%; }
+}
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+
+
+}
+* {
+    box-sizing: border-box;
+}
+html, body {
+    margin: auto 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+a:hover {
+    color: red;
+    background: yellow;
+}
+.header {
+    background:linear-gradient(0deg,rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url('../img/header.jpg');
+    background-size: 100% 100%;
+    margin: 0;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 700;
+}
+.title {
+    margin: auto;
+    padding-top: 25%;
+    padding-bottom: 20px;
+    text-align: left;
+}
+.animated-underline {
+    display: inline-block;
+    position: relative;
+    padding-bottom: 3px;
+}
+.animated-underline:after {
+    content: '';
+    display: block;
+    margin: auto;
+    height: 3px;
+    width: 1px;
+    background: transparent;
+    transition: width .5s ease, background-color .5s ease;
+}
+.animated-underline:hover:after {
+    width: 100%;
+    background: #edef53;
+}
+.title h1 {
+    position: -webkit-sticky;
+    position: -moz-sticky;
+    position: -ms-sticky;
+    position: -o-sticky;
+    position: sticky;
+    top: 25px;
+    font-size: 42px;
+    color: #fff;
+}
+.fix-top {
+    top:20px;
+}
+.title h1:hover {
+    color: #edef53;
+    cursor: pointer;
+}
+.title h2 {
+    font-size: 26px;
+    color: #D3D3D3;
+}
+.writter {
+    font-size: 12px;
+    color: #fff;
+}
+.writter-name {
+    font-size: 16px;
+    color: #D3D3D3;
+}
+.writter-name i {
+    color: yellow;
+}
+.main {
+    margin: auto;
+}
+.content {
+    text-align: justify;
+    width: 100%;
+}
+.content p {
+    color: gray;
+}
+.content ol li {
+    padding-left: 20px;
+}
+blockquote {
+    text-align: center;
+    color: gray;
+    font-size: 32px;
+}
+.to-top{
+    color: gray;
+    cursor: pointer;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.above-footer {
+    height: 40%;
+    background: -webkit-linear-gradient(to right, rgba(88, 94, 104), rgba(80, 82, 84)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(to right, rgba(88, 94, 104), rgba(80, 82, 84)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(to right, rgba(88, 94, 104), rgba(80, 82, 84)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, rgba(88, 94, 104), rgba(80, 82, 84)); /* Standard syntax */
+}
+.share {
+    width: 100%;
+    margin: auto 0;
+    padding-top: 100px;
+    text-align: center;
+}
+.box {
+  width: 100%;
+  margin: 0 auto;
+  background-clip: padding-box;
+  text-align: center;
+}
+
+.button {
+  font-size: 1em;
+  padding: 20px;
+  color: #06D85F;
+  border: 2px solid #06D85F;
+  border-radius: 30px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+.button:hover {
+  background: #06D85F;
+  color: #fff;
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 350px;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: #333;
+  font-family: 'Roboto', serif;
+}
+.popup .close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {
+  color: #06D85F;
+}
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+}
+input[type=email] {
+    margin: auto;
+    border: 2px solid black;
+    border-radius: 20px;
+    width: 100%;
+    height: 30px;
+    text-align: center;
+}
+input[type=email]:focus {
+    background: #d7e0ef;
+}
+.send-button {
+    cursor: pointer;
+    width: 50%;
+    height: 50px;
+    margin: auto;
+    text-align: center;
+    border: 1px solid #06D85F;
+    border-radius: 20px;
+    background-color: #06D85F;
+    font-weight: 200;
+}
+.send-button:hover {
+    cursor: pointer;
+    color: #fff;
+    border: 1px solid black;
+}
+.footer {
+    width: 100%;
+    height: 410px;
+    margin: auto;
+}
+.footer-left {
+    min-height: 100%;
+    background:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url('../img/footer-left.png') no-repeat;
+    background-size: cover;
+    float: left;
+}
+.footer-left h3 {
+    font-size: 12px;
+    color: #fff;
+    padding-top: 40px;
+    padding-left: 50px;
+}
+.footer-left p {
+    font-size: 25px;
+    font-style: italic;
+    padding-top: 50px;
+    padding-left: 50px;
+    color: #fff;
+}
+.footer-right {
+    min-height: 100%;
+    background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url('../img/footer-right.png') no-repeat;
+    background-size: cover;
+    float: left;
+    padding: 0;
+}
+.footer-right h3 {
+    font-size: 12px;
+    color: #fff;
+    padding-top: 40px;
+    padding-left: 50px;
+}
+.footer-right p {
+    font-size: 25px;
+    font-style: italic;
+    padding-top: 50px;
+    padding-left: 50px;
+    color: #fff;
+}
+.footer .bott {
+    color: #D3D3D3;
+    font-size: 18px;
+    padding-left: 50px;
+    padding-top: 0;
+}
+
